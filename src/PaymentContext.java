@@ -8,4 +8,8 @@ public class PaymentContext {
     public void performPayment(int amount) {
         paymentStrategy.pay(amount);
     }
+
+    public void setPaymentStrategy(PaymentStrategy paymentStrategy) {
+        this.paymentStrategy = paymentStrategy;
+    }
 }
